@@ -78,6 +78,7 @@ namespace MVC5Course.Controllers
 
         public ActionResult VT()
         {
+            ViewBag.IsEnabled = true;
             return View();
         }
 
