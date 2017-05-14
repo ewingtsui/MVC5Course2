@@ -18,6 +18,7 @@ namespace MVC5Course.Controllers
         //private FabricsEntities db = new FabricsEntities();
 
         // GET: Products
+        [OutputCache(Duration = 5, Location = System.Web.UI.OutputCacheLocation.ServerAndClient)]
         public ActionResult Index(bool Active = true)
         {
             var data = repo.GetProduct列表頁所有資料(Active, showAll: false);
